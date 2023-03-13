@@ -58,7 +58,7 @@ function createBoard() {
       const card = document.createElement('img')
       card.setAttribute('src', 'images/blank.png')
       card.setAttribute('data-id', i)
-        console.log(card, i);
+      grid.appendChild(card)
     }
 }
 createBoard()
