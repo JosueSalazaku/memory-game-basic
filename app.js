@@ -72,7 +72,7 @@ function checkMatch() {
     console.log('check for Match !')
     if (cardsChosen[0] === cardsChosen[1]) {
         alert('You have a match my boyy')
-        cards[cardsChosenIds[0]].setAttribute('src', images/white.png)
+        cards[cardsChosenIds[0]].setAttribute('src', 'images/white.png')
     }
 }
 
