@@ -76,6 +76,8 @@ function checkMatch() {
     console.log('check for Match !')
 
     if(optionOneId === optionTwoId) {
+        cards[optionOneId].setAttribute('src', images/blank.png)
+        cards[optionTwoId].setAttribute('src', images/blank.png)
         alert('You clicked on the same card my boyy')
     }
     
@@ -91,11 +93,13 @@ function checkMatch() {
         cards[optionTwoId].setAttribute('src', images/blank.png)
         alert('Sorry try again my boyyi ')
     }
+
+    resultDisplay.textContent = cardsWon.length
     cardsChosen = []
     cardsChosenIds = []
 
     if (cardsWon.length == cardArray.length/2) {
-        resultDisplay.innerHTML = 'Congrats my boy , you got em all!'
+        resultDisplay.textContent = 'Congrats my boy , you got em all!'
     }
 }
 
